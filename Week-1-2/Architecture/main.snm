@@ -1,1 +1,7 @@
-\beamer@slide {fig:sensor}{2}
+\beamer@slide {fig:neuron}{2}
+\beamer@slide {fig:sigmoid}{4}
+\beamer@slide {fig:tanh}{4}
+\beamer@slide {fig:relu}{4}
+\beamer@slide {fig:forwardprop}{5}
+\beamer@slide {fig:backwardprop}{6}
+\beamer@slide {fig:sensor}{7}

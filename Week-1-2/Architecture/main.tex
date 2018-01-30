@@ -31,9 +31,10 @@
 \usepackage{tikz}
 \usepackage{amsmath}
 \usepackage{verbatim}
+\usepackage[font=small,labelfont=bf]{caption} 
 \usetikzlibrary{arrows,shapes}
 
-\author{Jiaming Nie}
+\author{Jiaming Nie, Giang Nguyen}
 \title{Week 1 Summary}
 
 \begin{document}
@@ -56,6 +57,7 @@
 \frametitle{Week 1 Outline}
 
 \begin{itemize}
+\item Basic Neural Network
 \item Models on Accelerometer Dataset (CNN)
 \item Models on Gyroscope Dataset (CNN, LSTM and RNN)
 \item Useful Link for Accelerometer/Gyroscope Dataset 
@@ -68,6 +70,62 @@
 % Now it's time to draw some edges between the global nodes. Note that we
 % have to apply the 'overlay' style.
 
+\end{frame}
+\begin{frame}
+\frametitle{Basics of Neural Network}
+\begin{figure}[htbp] 
+	
+	\begin{center}
+		\includegraphics[width=10cm]{./image/single-neuron} 
+		\label{fig:neuron}		
+	\end{center}
+
+\end{figure}
+
+\end{frame}
+\begin{frame}
+\frametitle{Activation function}
+\begin{itemize}
+	\item Sigmoid: $$\sigma(x) = \frac{1}{1+exp(-x)}$$
+	\item tanh: $$tanh(x) = 2 \sigma(2x) -1 $$
+	\item ReLU: $$f(x) = max(0,x)$$
+\end{itemize}
+\end{frame}
+\begin{frame}
+ \begin{figure}[htbp] 
+	
+	\begin{center}
+		\includegraphics[scale=0.5]{./image/sigmoid} 
+		\label{fig:sigmoid}		
+		\includegraphics[scale=0.33]{./image/tanh}
+		\label{fig:tanh}
+		\includegraphics[scale=0.5]{./image/relu}
+		\label{fig:relu}
+		\captionof{figure}{Activation functions - Sigmoid, tanh and ReLU}
+	\end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Multi Layer Perceptron}
+\begin{center}
+	\begin{figure}
+		\includegraphics[scale=0.75]{./image/forward}
+		\label{fig:forwardprop}
+		\captionof{figure}{Forward propagation}
+	\end{figure}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Multi Layer Perceptron}
+\begin{center}
+	\begin{figure}
+		\includegraphics[scale=1]{./image/backward}
+		\label{fig:backwardprop}
+		\captionof{figure}{Backward propagation}
+	\end{figure}
+\end{center}
 \end{frame}
 
 \begin{frame}
